@@ -1,0 +1,70 @@
+<!-- ETAPE 2
+HTML
+CSS
+  - image responsive
+  - image l @media 872px
+  - nav
+ -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <!-- largeur de viewport égale à la largeur physique de l'écran, sans zoom -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prénom NOM</title>
+  <!-- charge la fonte "Space Mono" avec les gaisses : 400 (normal), 400i (italique) et 700 (gras) -->
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700" rel="stylesheet">
+  <!-- feuille de style externe -->
+  <link href="./2_style.css" rel="stylesheet">
+
+</head>
+
+<body class="home">
+
+    <!-- EN-TETE -->
+    <header class="header">
+      <div class="header-flex">
+        <h1 class="header-logo">Prénom NOM</h1>
+        <nav class="no-mobile">
+          <a href="#">portfolio</a> •
+          <a href="#">prenom.nom@ensaama.net</a> •
+          <a href="#">instagram</a>
+        </nav>
+        <nav class="mobile">
+          <a href="#footer-nav">≡</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- GRILLE -->
+    <div class="grid">
+      <div class="about">Prénom NOM, étudiant à l'<strong>ensaama</strong> en DNMADE1 Mention
+        <strong>Numérique</strong>.<br><br>
+        A la recherche d’un <strong><em>stage de 2 semaines</em></strong> sur Paris<br>
+        en juin.
+      </div>
+
+      <!-- générateur d'image en ligne : https://dummyimage.com/ -->
+      <img src="./images/demo/l/imgb.png" class="l" alt="app">
+      <img src="./images/demo/m/img7.png" class="m" alt="affiche">
+      <img src="./images/demo/s/img1.png" class="s" alt="site">
+      <img src="./images/demo/l/imgc.png" class="l" alt="app">
+      <img src="./images/demo/m/img8.png" class="m" alt="affiche">
+      <img src="./images/demo/s/img2.png" class="s" alt="site">
+      <img src="./images/demo/l/imgd.png" class="l" alt="app">
+      <img src="./images/demo/m/img9.png" class="m" alt="affiche">
+      <img src="./images/demo/s/img3.png" class="s" alt="site">
+    </div>
+
+  <!-- PIED DE PAGE -->
+  <footer class="footer">
+    <nav id="footer-nav">
+      <a href="#">portfolio</a>
+      <a href="#">prenom.nom(@)ensaama.net</a> •
+      <a href="#">instagram</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

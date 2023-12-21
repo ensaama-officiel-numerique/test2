@@ -1,0 +1,151 @@
+/* PAGE */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    background: #eee;
+    font-family: 'Space Mono', monospace;
+}
+
+/* LIEN */
+a {
+    color: #333;
+}
+
+/* NAVIGATION */
+nav {
+    color: #EA5046;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav.mobile {
+    display: block;
+    font-size: 24px;
+    line-height: 1;
+}
+
+nav.mobile a {
+    /* line-height: 48px; */
+    padding: 7px 14px;
+    height: 48px;
+    background: #EA5046;
+    color: #fff;
+    display: block;
+}
+
+/* si le viewport > 896px */
+@media (min-width:56em) {
+    nav.mobile {
+        display: none;
+    }
+}
+
+nav.no-mobile {
+    display: none;
+}
+
+@media (min-width:56em) {
+    nav.no-mobile {
+        display: block;
+    }
+}
+
+/* GRILLE */
+.grid {
+    display: grid;
+    grid-gap: 24px;
+    gap: 24px;
+    justify-content: center;
+    margin: 72px 0 24px 0;
+    padding: 0 24px;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-auto-rows: 288px;
+    grid-auto-flow: row dense;
+}
+
+.s {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+}
+
+.m {
+    grid-column-end: span 1;
+    grid-row-end: span 2;
+}
+
+.l {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
+}
+
+/* si largeur > 872px */
+@media (min-width:872px) {
+    .l {
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+    }
+}
+
+.about {
+    background: #fff;
+    color: #111;
+    /* font-family:'Palanquin',sans-serif; */
+    font-weight: 400;
+    padding: 24px;
+    font-size: 16px;
+}
+
+/* image responsive ajustée à la largeur du block */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* HEADER */
+.header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    grid-gap: 24px;
+    gap: 24px;
+    justify-content: center;
+    padding: 0 24px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.header-logo {
+    margin: 0;
+    font-size: 1em;
+}
+
+.header-flex {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* PIED DE PAGE */
+.footer,
+.mobile {
+    display: none;
+}
